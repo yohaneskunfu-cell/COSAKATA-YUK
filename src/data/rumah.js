@@ -1,0 +1,68 @@
+// src/data/Rumah.js
+
+export const rumahData = {
+  name: "Rumah & Ruangan",
+  emoji: "🏠",
+  words: [
+    // Bagian & Ruangan Rumah
+    ["house", "rumah"],
+    ["room", "ruangan"],
+    ["living room", "ruang tamu"],
+    ["bedroom", "kamar tidur"],
+    ["kitchen", "dapur"],
+    ["bathroom", "kamar mandi"],
+    ["dining room", "ruang makan"],
+    ["garage", "garasi"],
+    ["garden", "kebun"],
+    ["roof", "atap"],
+    ["wall", "dinding"],
+    ["floor", "lantai"],
+    ["ceiling", "langit-langit"],
+    ["door", "pintu"],
+    ["window", "jendela"],
+    ["stairs", "tangga"],
+    ["balcony", "balkon"],
+    ["fence", "pagar"],
+    ["terrace", "teras"],
+    ["attic", "loteng"],
+    
+    // Perabot & Barang di Rumah
+    ["table", "meja"],
+    ["chair", "kursi"],
+    ["bed", "tempat tidur"],
+    ["pillow", "bantal"],
+    ["blanket", "selimut"],
+    ["wardrobe", "lemari pakaian"],
+    ["cupboard", "lemari piring"],
+    ["sofa", "sofa"],
+    ["television", "televisi"],
+    ["lamp", "lampu"],
+    ["mirror", "cermin"],
+    ["curtain", "gorden"],
+    ["rug", "karpet"],
+    ["shelf", "rak"],
+    ["clock", "jam dinding"],
+    ["picture", "gambar"],
+    ["vase", "vas bunga"],
+    ["broom", "sapu"],
+    ["mop", "pel"],
+    ["trash can", "tempat sampah"],
+
+    // Peralatan Dapur & Rumah Tangga
+    ["refrigerator", "kulkas"],
+    ["stove", "kompor"],
+    ["oven", "oven"],
+    ["microwave", "microwave"],
+    ["blender", "blender"],
+    ["pan", "panci"],
+    ["plate", "piring"],
+    ["bowl", "mangkuk"],
+    ["glass", "gelas"],
+    ["spoon", "sendok"],
+    ["fork", "garpu"],
+    ["knife", "pisau"],
+    ["faucet", "keran air"],
+    ["sink", "wastafel"],
+    ["washing machine", "mesin cuci"]
+  ]
+};

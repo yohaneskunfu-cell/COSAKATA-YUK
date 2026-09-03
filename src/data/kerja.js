@@ -1,0 +1,31 @@
+export const kerja = {
+  name: "Kata Kerja",
+  emoji: "🏃",
+  words: [
+    ["run", "berlari", "🏃"],
+    ["walk", "berjalan", "🚶"],
+    ["eat", "makan", "🍽️"],
+    ["drink", "minum", "🥤"],
+    ["sleep", "tidur", "🛌"],
+    ["read", "membaca", "📖"],
+    ["write", "menulis", "✍️"],
+    ["speak", "berbicara", "🗣️"],
+    ["listen", "mendengarkan", "👂"],
+    ["look", "melihat", "👀"],
+    ["sit", "duduk", "🪑"],
+    ["stand", "berdiri", "🧍"],
+    ["swim", "berenang", "🏊"],
+    ["jump", "melompat", "🦘"],
+    ["fly", "terbang", "✈️"],
+    ["cook", "memasak", "🍳"],
+    ["clean", "membersihkan", "🧹"],
+    ["wash", "mencuci", "🧼"],
+    ["play", "bermain", "🎮"],
+    ["work", "bekerja", "💻"],
+    ["study", "belajar", "📚"],
+    ["teach", "mengajar", "👩‍🏫"],
+    ["sing", "menyanyi", "🎤"],
+    ["dance", "menari", "💃"],
+    ["laugh", "tertawa", "😄"]
+  ]
+};
