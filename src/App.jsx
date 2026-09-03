@@ -4,7 +4,7 @@ import { categories as initialCategories } from './data';
 import ChatAssistant from './ChatAssistant'; // Import komponen ChatAssistant
 import { pekerjaanData } from './data/Pekerjaan';
 import { transportasiData } from './data/Transportasi';
-import { rumahData } from './data/Rumah';
+import { rumahData } from './Rumah/data';
 
 const ones = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
   "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
