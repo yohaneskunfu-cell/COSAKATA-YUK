@@ -6,6 +6,7 @@ import { tubuh } from './tubuh';
 import { kerja } from './kerja'; // Ubah dari './kerj' menjadi './kerja'
 import { sifat } from './sifat';
 import { waktu } from './waktu';
+import { feelings } from "./feelings";
 
 export const categories = {
   warna,
@@ -15,5 +16,6 @@ export const categories = {
   tubuh,
   kerja,
   sifat,
-  waktu
+  waktu,
+  feelings,
 };
