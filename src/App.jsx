@@ -3,8 +3,8 @@ import { Volume2, RotateCcw, ArrowLeft, GraduationCap, Hash, Play, Plus, Trash2,
 import { categories as initialCategories } from './data';
 import ChatAssistant from './ChatAssistant'; // Import komponen ChatAssistant
 import { pekerjaanData } from './data/Pekerjaan';
-import { transportasiData } from './data/transportasi';
-import { rumahData } from './data/rumah';
+import { transportasiData } from "./data/transportasi";
+import { rumahData } from "./data/rumah";
 
 const ones = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
   "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
