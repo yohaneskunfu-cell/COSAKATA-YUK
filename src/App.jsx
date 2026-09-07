@@ -28,6 +28,39 @@ function shuffle(arr) {
   return [...arr].sort(() => Math.random() - 0.5);
 }
 
+// Fungsi untuk mengirim log aktivitas ke API Railway
+const sendActivityLog = async (username, actionText) => {
+  try {
+    await fetch('/api/save-data', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        type: 'log',
+        username: username,
+        action: actionText
+      })
+    });
+  } catch (err) {
+    console.error("Gagal mengirim log:", err);
+  }
+};
+
+// Fungsi untuk mengirim laporan nilai kuis ke API Railway
+const sendStudentReport = async (reportData) => {
+  try {
+    await fetch('/api/save-data', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        type: 'report',
+        ...reportData
+      })
+    });
+  } catch (err) {
+    console.error("Gagal mengirim laporan:", err);
+  }
+};
+
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [user, setUser] = useState(() => localStorage.getItem('kosakata_user') || null);
@@ -116,6 +149,9 @@ export default function App() {
       localStorage.setItem('kosakata_logs', JSON.stringify(updated));
       return updated;
     });
+
+    // Kirim ke API Railway
+    sendActivityLog(currentUser, actionText);
   };
 
   const saveQuizReport = (finalScore, totalQ, resultsArr, quizTitle) => {
@@ -135,6 +171,10 @@ export default function App() {
       localStorage.setItem('kosakata_reports', JSON.stringify(updated));
       return updated;
     });
+
+    // Kirim ke API Railway
+    sendStudentReport(reportItem);
+
     logActivity(`Menyelesaikan ${quizTitle} dengan skor ${finalScore}/${totalQ}`, currentUser);
   };
 
